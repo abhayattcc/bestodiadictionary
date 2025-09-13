@@ -26,6 +26,55 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             animation: bounceIn 0.8s ease-out;
         }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        #refresh-btn {
+            flex: 1;
+            padding: 12px;
+            font-size: 18px;
+            font-family: 'Comic Sans MS', 'Arial', sans-serif;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            color: white;
+            background: #2196f3;
+            transition: transform 0.2s ease, background 0.3s ease;
+            text-align: center;
+            min-width: 100px;
+        }
+        #refresh-btn:hover {
+            transform: scale(1.05);
+            background: #1976d2;
+        }
+        .button {
+            flex: 1;
+            padding: 12px;
+            font-size: 18px;
+            font-family: 'Comic Sans MS', 'Arial', sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            text-align: center;
+            min-width: 100px;
+            transition: transform 0.2s ease, background 0.3s ease;
+        }
+        .button:hover {
+            transform: scale(1.05);
+            background: linear-gradient(45deg, #ff4b4b, #3ab8b0);
+        }
         @keyframes bounceIn {
             0% { transform: scale(0.8); opacity: 0; }
             60% { transform: scale(1.05); opacity: 1; }
@@ -491,30 +540,24 @@
                 width: 36px;
                 height: 36px;
             }
+            #refresh-btn, .button {
+                padding: 8px;
+                font-size: 14px;
+                min-width: 80px;
+            }
         }
-#refresh-btn {
-        padding: 8px 15px;
-        font-size: 16px;
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-        color: white;
-        background: #2196f3;
-        transition: transform 0.2s ease, background 0.3s ease;
-    }
-    #refresh-btn:hover {
-        transform: scale(1.1);
-        background: #1976d2;
-    }
-
     </style>
 </head>
 <body>
 <div class="container">
+    <div class="header">
+        <button id="refresh-btn" title="Refresh">🔄 Refresh</button>
+        <a href="index.html" class="button">🏠 Home</a>
+    </div>
     <div id="dictionary-section" class="dictionary-section">
         <h2>🌟 Abhayattcc Odia-English-Hindi-Dictionary-Reader 🌟</h2>
         <input type="text" id="searchInput" placeholder="Find a magic word!">
-                              <ul id="suggestions" class="hidden"></ul>
+        <ul id="suggestions" class="hidden"></ul>
         <div style="display: flex; gap: 10px; margin-bottom: 15px;">
             <input type="file" id="file-upload" accept=".pdf,.txt,.html" multiple>
             <button id="ocr-btn">📷 OCR</button>
@@ -526,9 +569,6 @@
             <label><input type="checkbox" id="ocr-odia"> Odia OCR</label>
             <button id="edit-dictionary-btn" class="hidden">✏️ Edit</button>
         </div>
-<div id="result-controls">
-    <button id="refresh-btn" title="Refresh">🔄 Refresh</button>
-</div>
         <form id="edit-dictionary-form" class="hidden">
             <input type="text" id="edit-english" placeholder="Enter English word">
             <input type="text" id="edit-odia" placeholder="Enter Odia word">
@@ -538,6 +578,7 @@
         </form>
         <div id="results"></div>
         <div id="result-controls">
+            <select id="voiceSelect">
                 <option value=""> </option>
             </select>
             <button id="result-speak">⏯️ Speak</button>
