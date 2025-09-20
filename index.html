@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>🌟 Abhayattcc Odia-English-Hindi-Dictionary-Reader 🌟</title>
+    <title>Abhayattcc Odia-English-Hindi-Dictionary-Reader</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.0.4/pako.min.js"></script>
@@ -75,6 +75,7 @@
             transition: all 0.3s ease;
             box-sizing: border-box;
             text-align: center;
+            white-space: pre-wrap;
         }
         input[type="text"]:focus {
             border-color: #e91e63;
@@ -131,45 +132,7 @@
         #edit-dictionary-btn.hidden, #edit-dictionary-form.hidden {
             display: none;
         }
-        #voiceSelect {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background: #2196f3 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 15c1.66 0 2.99-1.34 2.99-3L15 6c0-1.66-1.34-3-2.99-3S9 4.34 9 6v6c0 1.66 1.34 3 2.99 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 15 6.7 12H5c0 3.42 2.72 6.23 6 6.72V22h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/></svg>') no-repeat center;
-            background-size: 20px;
-            border: none;
-            appearance: none;
-            cursor: pointer;
-            transition: transform 0.2s ease;
-        }
-        #voiceSelect:hover, #reader-voice-select-1:hover, #reader-voice-select-2:hover, #reader-voice-select-3:hover, #popup-voice-select-1:hover, #popup-voice-select-2:hover, #popup-voice-select-3:hover {
-            transform: scale(1.2);
-        }
-        #voiceSelect:focus, #reader-voice-select-1:focus, #reader-voice-select-2:focus, #reader-voice-select-3:focus, #popup-voice-select-1:focus, #popup-voice-select-2:focus, #popup-voice-select-3:focus {
-            outline: none;
-            border: 2px solid #e91e63;
-        }
-        #voiceSelect option, #reader-voice-select-1 option, #reader-voice-select-2 option, #reader-voice-select-3 option, #popup-voice-select-1 option, #popup-voice-select-2 option, #popup-voice-select-3 option {
-            width: auto;
-            padding: 5px;
-            background: #fff;
-            color: #000;
-            font-size: 14px;
-        }
-        #reader-voice-select-1, #reader-voice-select-2, #reader-voice-select-3, #popup-voice-select-1, #popup-voice-select-2, #popup-voice-select-3 {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background: #2196f3 no-repeat center;
-            background-size: 20px;
-            border: none;
-            appearance: none;
-            cursor: pointer;
-            transition: transform 0.2s ease;
-        }
-        #result-speak:hover, #result-stop:hover, #ocr-btn:hover, #export-btn:hover, #edit-dictionary-btn:hover, #text-edit-btn:hover {
-            transform: scale(1.1);
-        }
+
         #ocr-controls label {
             font-size: 16px;
             color: #d81b60;
@@ -541,20 +504,11 @@
         </div>
     </div>
     <div id="reader-section">
-        <h2>📚 Story Land 📚</h2>
+        <h2>📚 Reader Section 📚</h2>
         <div id="controls">
             <input type="file" id="file-upload-reader" accept=".pdf,.txt,.html" multiple>
             <button id="text-edit-btn" title="Edit Text">✏️</button>
             <div id="voice-controls">
-                <select id="reader-voice-select-1">
-                    <option value=""> </option>
-                </select>
-                <select id="reader-voice-select-2">
-                    <option value=""> </option>
-                </select>
-                <select id="reader-voice-select-3">
-                    <option value=""> </option>
-                </select>
                 <button id="play-btn" title="Play/Pause">🗣️</button>
                 <button id="stop-btn" title="Stop" disabled>🛑</button>
                 <button id="export-btn" title="Export Text">📤</button>
@@ -638,11 +592,14 @@ const dbFiles = {
     english_hindi: 'https://raw.githubusercontent.com/abhayattcc/Best-odia-dictionary/refs/heads/main/data/english_hindi.db.gz'
 };
 const filesToCache = [
+    'https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.min.js',
     'https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.wasm',
-    'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js',
     'https://cdnjs.cloudflare.com/ajax/libs/pako/2.0.4/pako.min.js',
-    'https://cdn.jsdelivr.net/npm/tesseract.js@5.0.0/dist/worker.min.js',
-    'https://cdn.jsdelivr.net/npm/tesseract.js-core@5.0.0/tesseract-core.wasm.js',
+    'https://cdn.jsdelivr.net/npm/tesseract.js@5.1.0/dist/tesseract.min.js',
+    'https://cdn.jsdelivr.net/npm/tesseract.js@5.1.0/dist/worker.min.js',
+    'https://cdn.jsdelivr.net/npm/tesseract.js-core@5.1.0/tesseract-core.wasm.js',
     'https://raw.githubusercontent.com/abhayattcc/Best-odia-dictionary/refs/heads/main/lang-data/eng.traineddata.gz',
     'https://raw.githubusercontent.com/abhayattcc/Best-odia-dictionary/refs/heads/main/lang-data/hin.traineddata.gz',
     'https://raw.githubusercontent.com/abhayattcc/Best-odia-dictionary/refs/heads/main/lang-data/ori.traineddata.gz',
@@ -837,8 +794,8 @@ function stemHindiWord(word) {
     return stemmed;
 }
 
-function saveCustomEntry(word, english, odia, odia_spelling, odia_meaning, targetElement) {
-    if (!english && !odia && !odia_spelling && !odia_meaning) {
+function saveCustomEntry(word, english, odia, odia_spelling, odia_meaning, targetElement, imageBase64 = '') {
+    if (!english && !odia && !odia_spelling && !odia_meaning && !imageBase64) {
         alert('Please fill in at least one field.');
         return;
     }
@@ -847,7 +804,8 @@ function saveCustomEntry(word, english, odia, odia_spelling, odia_meaning, targe
         English: english || '',
         odia: odia || '',
         odia_spelling: odia_spelling || '',
-        odia_meaning: odia_meaning || ''
+        odia_meaning: odia_meaning || '',
+        image: imageBase64 || ''
     };
     localStorage.setItem('customDictionary', JSON.stringify(customDictionary));
     searchWord(word, targetElement);
@@ -866,19 +824,14 @@ function hideImage(word, element) {
 }
 
 function showImage(word, element) {
-    const password = prompt('Enter the word to show the image:');
-    if (password && password.toLowerCase() === word.toLowerCase()) {
-        imageVisibility[word] = true;
-        localStorage.setItem('imageVisibility', JSON.stringify(imageVisibility));
-        const imageContainer = element.closest('.dictionary-entry').querySelector('.dictionary-image');
-        imageContainer.style.display = 'block';
-        const showButton = element.closest('.dictionary-entry').querySelector('.show-image-btn');
-        const hideButton = element.closest('.dictionary-entry').querySelector('.hide-image-btn');
-        showButton.style.display = 'none';
-        hideButton.style.display = 'inline-block';
-    } else {
-        alert('Incorrect word. Please enter the correct word.');
-    }
+    imageVisibility[word] = true;
+    localStorage.setItem('imageVisibility', JSON.stringify(imageVisibility));
+    const imageContainer = element.closest('.dictionary-entry').querySelector('.dictionary-image');
+    imageContainer.style.display = 'block';
+    const showButton = element.closest('.dictionary-entry').querySelector('.show-image-btn');
+    const hideButton = element.closest('.dictionary-entry').querySelector('.hide-image-btn');
+    showButton.style.display = 'none';
+    hideButton.style.display = 'inline-block';
 }
 
 function speakResults() {
@@ -908,7 +861,7 @@ function speakResults() {
                 utterance.lang = voice.lang;
                 utterance.rate = 0.7;
                 utterance.pitch = 1.0;
-                utterance.volume = 4.0;
+                utterance.volume = 1.0;
                 utterance.onend = () => {
                     activeUtterances--;
                     if (activeUtterances === 0) {
@@ -968,16 +921,9 @@ async function searchWord(word, targetElement = document.getElementById('results
 
     // Check custom dictionary
     const customDictionary = JSON.parse(localStorage.getItem('customDictionary') || '{}');
-    Object.keys(customDictionary).forEach(key => {
-        const entry = customDictionary[key];
-        if (key === word ||
-            (entry.English && stemEnglishWord(entry.English) === stemmedEnglish) ||
-            (entry.odia && stemOdiaWord(entry.odia) === stemmedOdia) ||
-            (entry.odia_spelling && stemOdiaWord(entry.odia_spelling) === stemmedOdia) ||
-            (entry.hindi && stemHindiWord(entry.hindi) === stemmedHindi)) {
-            entries.push(entry);
-        }
-    });
+    if (customDictionary[word]) {
+        entries.push(customDictionary[word]);
+    }
 
     // Query databases for exact and stemmed matches
     if (dbEnglishOdia) {
@@ -1098,62 +1044,11 @@ async function searchWord(word, targetElement = document.getElementById('results
         }
     }
 
-    for (let entry of entries) {
-        if (entry.English && !entry.odia && dbEnglishOdia) {
-            let stmt = dbEnglishOdia.prepare("SELECT odia FROM dictionary WHERE LOWER(English) = ?");
-            stmt.bind([entry.English.toLowerCase()]);
-            while (stmt.step()) {
-                entry.odia = entry.odia || stmt.getAsObject().odia;
-            }
-            stmt.free();
-        }
-
-        if (entry.English && !entry.hindi && dbEnglishHindi) {
-            let stmt = dbEnglishHindi.prepare("SELECT hindi, image FROM dictionary WHERE LOWER(English) = ?");
-            stmt.bind([entry.English.toLowerCase()]);
-            while (stmt.step()) {
-                const row = stmt.getAsObject();
-                entry.hindi = entry.hindi || row.hindi;
-                entry.image = entry.image || row.image;
-            }
-            stmt.free();
-        }
-
-        if (entry.odia && !entry.English && dbEnglishOdia) {
-            let stmt = dbEnglishOdia.prepare("SELECT English FROM dictionary WHERE LOWER(odia) = ?");
-            stmt.bind([entry.odia.toLowerCase()]);
-            while (stmt.step()) {
-                entry.English = entry.English || stmt.getAsObject().English;
-                if (entry.English && !entry.hindi && dbEnglishHindi) {
-                    let stmt2 = dbEnglishHindi.prepare("SELECT hindi, image FROM dictionary WHERE LOWER(English) = ?");
-                    stmt2.bind([entry.English.toLowerCase()]);
-                    while (stmt2.step()) {
-                        const row = stmt2.getAsObject();
-                        entry.hindi = entry.hindi || row.hindi;
-                        entry.image = entry.image || row.image;
-                    }
-                    stmt2.free();
-                }
-            }
-            stmt.free();
-        }
-
-        if (entry.odia && (!entry.odia_spelling || !entry.odia_meaning) && dbOdiaMeaning) {
-            let stmt = dbOdiaMeaning.prepare("SELECT odia_spelling, odia_meaning FROM dictionary WHERE LOWER(odia) = ?");
-            stmt.bind([entry.odia.toLowerCase()]);
-            while (stmt.step()) {
-                const row = stmt.getAsObject();
-                entry.odia_spelling = entry.odia_spelling || row.odia_spelling;
-                entry.odia_meaning = entry.odia_meaning || row.odia_meaning;
-            }
-            stmt.free();
-        }
-    }
-
+    // Merge entries to avoid duplicates
     const mergedEntries = [];
     const seen = new Set();
     for (let entry of entries) {
-        const key = `${entry.English || ''}|${entry.odia || ''}`;
+        const key = `${entry.English || ''}|${entry.odia || ''}|${entry.hindi || ''}`;
         if (!seen.has(key)) {
             seen.add(key);
             mergedEntries.push({
@@ -1164,56 +1059,125 @@ async function searchWord(word, targetElement = document.getElementById('results
                 odia_meaning: entry.odia_meaning || '',
                 image: entry.image || ''
             });
-        } else {
-            const existing = mergedEntries.find(e => e.English === (entry.English || '') && e.odia === (entry.odia || ''));
-            if (existing) {
-                existing.hindi = existing.hindi || entry.hindi || '';
-                existing.odia_spelling = existing.odia_spelling || entry.odia_spelling || '';
-                existing.odia_meaning = existing.odia_meaning || entry.odia_meaning || '';
-                existing.image = existing.image || entry.image || '';
-            }
         }
     }
 
-    let displayParts = [];
-    for (let entry of mergedEntries) {
+    // Select the best entry (prioritize exact match or custom dictionary)
+    let bestEntry = mergedEntries.find(entry => 
+        entry.English.toLowerCase() === word ||
+        entry.odia.toLowerCase() === word ||
+        entry.hindi.toLowerCase() === word ||
+        entry.odia_spelling.toLowerCase() === word ||
+        customDictionary[word]
+    ) || mergedEntries[0];
+
+    let speakText = '';
+    if (bestEntry) {
+        // Fill missing fields for the best entry
+        if (bestEntry.English && !bestEntry.odia && dbEnglishOdia) {
+            let stmt = dbEnglishOdia.prepare("SELECT odia FROM dictionary WHERE LOWER(English) = ?");
+            stmt.bind([bestEntry.English.toLowerCase()]);
+            while (stmt.step()) {
+                bestEntry.odia = bestEntry.odia || stmt.getAsObject().odia;
+            }
+            stmt.free();
+        }
+
+        if (bestEntry.English && !bestEntry.hindi && dbEnglishHindi) {
+            let stmt = dbEnglishHindi.prepare("SELECT hindi, image FROM dictionary WHERE LOWER(English) = ?");
+            stmt.bind([bestEntry.English.toLowerCase()]);
+            while (stmt.step()) {
+                const row = stmt.getAsObject();
+                bestEntry.hindi = bestEntry.hindi || row.hindi;
+                bestEntry.image = bestEntry.image || row.image;
+            }
+            stmt.free();
+        }
+
+        if (bestEntry.odia && !bestEntry.English && dbEnglishOdia) {
+            let stmt = dbEnglishOdia.prepare("SELECT English FROM dictionary WHERE LOWER(odia) = ?");
+            stmt.bind([bestEntry.odia.toLowerCase()]);
+            while (stmt.step()) {
+                bestEntry.English = bestEntry.English || stmt.getAsObject().English;
+                if (bestEntry.English && !bestEntry.hindi && dbEnglishHindi) {
+                    let stmt2 = dbEnglishHindi.prepare("SELECT hindi, image FROM dictionary WHERE LOWER(English) = ?");
+                    stmt2.bind([bestEntry.English.toLowerCase()]);
+                    while (stmt2.step()) {
+                        const row = stmt2.getAsObject();
+                        bestEntry.hindi = bestEntry.hindi || row.hindi;
+                        bestEntry.image = bestEntry.image || row.image;
+                    }
+                    stmt2.free();
+                }
+            }
+            stmt.free();
+        }
+
+        if (bestEntry.odia && (!bestEntry.odia_spelling || !bestEntry.odia_meaning) && dbOdiaMeaning) {
+            let stmt = dbOdiaMeaning.prepare("SELECT odia_spelling, odia_meaning FROM dictionary WHERE LOWER(odia) = ?");
+            stmt.bind([bestEntry.odia.toLowerCase()]);
+            while (stmt.step()) {
+                const row = stmt.getAsObject();
+                bestEntry.odia_spelling = bestEntry.odia_spelling || row.odia_spelling;
+                bestEntry.odia_meaning = bestEntry.odia_meaning || row.odia_meaning;
+            }
+            stmt.free();
+        }
+
         let mainParts = [];
-        if (entry.odia) mainParts.push(` ${entry.odia}`);
-        if (entry.odia_spelling) mainParts.push(` ${entry.odia_spelling}`);
-        if (entry.hindi) mainParts.push(` ${entry.hindi}`);
-        if (entry.English) mainParts.push(` ${entry.English}`);
-        let odiaMeaningPart = entry.odia_meaning ? `<div class="odia-meaning-toggle" onclick="toggleOdiaMeaning(this)">Show Odia Meaning ►</div><div class="odia-meaning" style="display: none;">${entry.odia_meaning}</div>` : '';
+        if (bestEntry.odia) mainParts.push(` ${bestEntry.odia}`);
+        if (bestEntry.odia_spelling) mainParts.push(` ${bestEntry.odia_spelling}`);
+        if (bestEntry.hindi) mainParts.push(` ${bestEntry.hindi}`);
+        if (bestEntry.English) mainParts.push(` ${bestEntry.English}`);
+        let odiaMeaningPart = bestEntry.odia_meaning ? `<div class="odia-meaning-toggle" onclick="toggleOdiaMeaning(this)">Show Odia Meaning ►</div><div class="odia-meaning" style="display: none;">${bestEntry.odia_meaning}</div>` : '';
         let imagePart = '';
         let buttonPart = '';
-        if (entry.image) {
+        if (bestEntry.image) {
             const isVisible = imageVisibility[word] !== false;
-            const imageSrc = cachedImages[entry.image] || entry.image;
+            const imageSrc = cachedImages[bestEntry.image] || bestEntry.image;
             imagePart = `<div class="dictionary-image" style="margin-top: 10px; display: ${isVisible ? 'block' : 'none'};"><img src="${imageSrc}" style="max-width: 90%; max-height: 400px; display: block; margin: 0 auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"></div>`;
-            buttonPart = `<div class="image-controls" style="margin-top: 10px; text-align: center;"><button class="hide-image-btn" style="display: ${isVisible ? 'inline-block' : 'none'};" onclick="hideImage('${word}', this)">Hide Image</button><button class="show-image-btn" style="display: ${isVisible ? 'none' : 'inline-block'};" onclick="showImage('${word}', this)">Show Image</button></div>`;
+            buttonPart = `<div class="image-controls" style="margin-top: 10px; text-align: center;"><button class="hide-image-btn" style="display: ${isVisible ? 'inline-block' : 'none'};" onclick="hideImage('${word}', this)">Delete Image</button><button class="show-image-btn" style="display: ${isVisible ? 'none' : 'inline-block'};" onclick="showImage('${word}', this)">Restore Image</button></div>`;
         }
-        if (mainParts.length > 0) {
-            displayParts.push(`<div class="dictionary-entry">${mainParts.join(' | ') + (odiaMeaningPart ? `<br>${odiaMeaningPart}` : '') + (imagePart ? `<br>${imagePart}` : '') + (buttonPart ? `<br>${buttonPart}` : '')}</div>`);
-        }
-    }
+        const displayText = `<div class="dictionary-entry"><div class="dictionary-text">${mainParts.join(' | ') + (odiaMeaningPart ? `<br>${odiaMeaningPart}` : '')}</div>${imagePart ? `<br>${imagePart}` : ''}${buttonPart ? `<br>${buttonPart}` : ''}</div>`;
 
-    let combinedText = displayParts.join('<br><br>');
+        speakText = [bestEntry.odia, bestEntry.odia_spelling, bestEntry.hindi, bestEntry.English, bestEntry.odia_meaning].filter(Boolean).join(' | ');
 
-    if (displayParts.length > 0) {
         if (targetElement === document.getElementById('results')) {
-            targetElement.innerHTML = `<div>${combinedText}</div>`;
-            resultText = combinedText;
+            targetElement.innerHTML = `<div>${displayText}</div>`;
+            resultText = speakText;
             document.getElementById('results').style.display = 'block';
             document.getElementById('suggestions').classList.remove('visible');
             document.getElementById('suggestions').classList.add('hidden');
             document.getElementById('result-speak').disabled = !isTTSSupported;
             document.getElementById('result-stop').disabled = true;
             if (isTTSSupported) speakResults();
+            if (customDictionary[word]) {
+                const deleteEntryBtn = document.createElement('button');
+                deleteEntryBtn.textContent = 'Delete Entry';
+                deleteEntryBtn.onclick = () => {
+                    delete customDictionary[word];
+                    localStorage.setItem('customDictionary', JSON.stringify(customDictionary));
+                    searchWord(word);
+                };
+                targetElement.appendChild(deleteEntryBtn);
+            }
         } else {
-            targetElement.innerHTML = `<div>${combinedText}</div>`;
+            targetElement.innerHTML = `<div>${displayText}</div>`;
+            document.getElementById('popup-speak').setAttribute('data-word', speakText);
+        }
+
+        // Cache image for offline use
+        if (bestEntry.image && !bestEntry.image.startsWith('data:') && !cachedImages[bestEntry.image]) {
+            const imageUrl = await cacheImage(bestEntry.image);
+            if (imageUrl) {
+                const imgElements = targetElement.querySelectorAll(`img[src="${bestEntry.image}"]`);
+                imgElements.forEach(img => img.src = imageUrl);
+            }
         }
     } else {
+        let notFoundMessage = '';
         if (targetElement === document.getElementById('results')) {
-            const notFoundMessage = 'ଆମେ ଆପଣଙ୍କ ଶବ୍ଦ ଖୋଜିପାରୁନାହିଁ, ଦୟା କରି ଭଲରେ ଶବ୍ଦ ଖୋଜନ୍ତୁ.';
+            notFoundMessage = 'ଆମେ ଆପଣଙ୍କ ଶବ୍ଦ ଖୋଜିପାରୁନାହିଁ, ଦୟା କରି ଭଲରେ ଶବ୍ଦ ଖୋଜନ୍ତୁ.';
             targetElement.innerHTML = `<div>${notFoundMessage}</div>`;
             resultText = notFoundMessage;
             document.getElementById('results').style.display = 'block';
@@ -1229,7 +1193,7 @@ async function searchWord(word, targetElement = document.getElementById('results
                 utterance.lang = defaultOdiaVoice.lang;
                 utterance.rate = 0.8;
                 utterance.pitch = 1.0;
-                utterance.volume = 4.0;
+                utterance.volume = 1.0;
                 utterance.onend = () => {
                     document.getElementById('result-speak').disabled = false;
                     document.getElementById('result-stop').disabled = true;
@@ -1240,25 +1204,15 @@ async function searchWord(word, targetElement = document.getElementById('results
                 document.getElementById('result-stop').disabled = false;
             }
         } else {
-            targetElement.innerHTML = `<div>Word not found.</div>`;
+            notFoundMessage = 'Word not found.';
+            targetElement.innerHTML = `<div>${notFoundMessage}</div>`;
+            document.getElementById('popup-speak').setAttribute('data-word', notFoundMessage);
         }
     }
 
     if (targetElement === document.getElementById('popup-content')) {
-        document.getElementById('popup-speak').setAttribute('data-word', combinedText);
         document.getElementById('popup-speak').disabled = !isTTSSupported;
         document.getElementById('popup-stop').disabled = true;
-    }
-
-    // Cache images for offline use
-    for (let entry of mergedEntries) {
-        if (entry.image && !cachedImages[entry.image]) {
-            const imageUrl = await cacheImage(entry.image);
-            if (imageUrl) {
-                const imgElements = targetElement.querySelectorAll(`img[src="${entry.image}"]`);
-                imgElements.forEach(img => img.src = imageUrl);
-            }
-        }
     }
 }
 
@@ -1851,7 +1805,7 @@ function speakPopup() {
                 utterance.lang = voice.lang;
                 utterance.rate = 0.7;
                 utterance.pitch = 1.0;
-                utterance.volume = 4.0;
+                utterance.volume = 1.0;
                 utterance.onend = () => {
                     activeUtterances--;
                     if (activeUtterances === 0) {
@@ -1948,7 +1902,7 @@ function readNextSentence() {
                 utterance.lang = voice.lang;
                 utterance.rate = 0.7;
                 utterance.pitch = 1.0;
-                utterance.volume = 4.0;
+                utterance.volume = 1.0;
                 utterance.onend = () => {
                     activeUtterances--;
                     if (activeUtterances === 0 && isReadingAloud) {
@@ -2144,6 +2098,38 @@ async function initializeApp() {
         }
     }
 
+    if ('serviceWorker' in navigator) {
+        const swCode = `
+            self.addEventListener('install', (event) => {
+                event.waitUntil(
+                    caches.open('${cacheName}').then((cache) => {
+                        return cache.addAll(${JSON.stringify(filesToCache)});
+                    })
+                );
+            });
+
+            self.addEventListener('fetch', (event) => {
+                event.respondWith(
+                    caches.match(event.request).then((response) => {
+                        return response || fetch(event.request).then((fetchResponse) => {
+                            return caches.open('${cacheName}').then((cache) => {
+                                cache.put(event.request, fetchResponse.clone());
+                                return fetchResponse;
+                            });
+                        });
+                    })
+                );
+            });
+        `;
+        const blob = new Blob([swCode], { type: 'application/javascript' });
+        const swUrl = URL.createObjectURL(blob);
+        navigator.serviceWorker.register(swUrl).then(reg => {
+            console.log('Service Worker registered');
+        }).catch(err => {
+            console.error('Service Worker registration failed:', err);
+        });
+    }
+
     if (isTTSSupported) {
         const synth = window.speechSynthesis;
         populateVoiceList();
@@ -2175,6 +2161,13 @@ async function initializeApp() {
     const debouncedSuggestions = debounce((word) => {
         loadSuggestions(word);
     }, 700);
+
+    // Dynamically add image file input to the form
+    const editImageInput = document.createElement('input');
+    editImageInput.type = 'file';
+    editImageInput.id = 'edit-image';
+    editImageInput.accept = 'image/*';
+    editDictionaryForm.insertBefore(editImageInput, editDictionaryForm.querySelector('button'));
 
     searchInput.addEventListener('input', () => {
         const word = searchInput.value;
@@ -2251,15 +2244,26 @@ async function initializeApp() {
         editDictionaryForm.classList.toggle('hidden');
     });
 
-    editDictionaryForm.addEventListener('submit', (e) => {
+    editDictionaryForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         const word = searchInput.value.trim();
         const english = document.getElementById('edit-english').value.trim();
         const odia = document.getElementById('edit-odia').value.trim();
         const odia_spelling = document.getElementById('edit-odia-spelling').value.trim();
         const odia_meaning = document.getElementById('edit-odia-meaning').value.trim();
-        saveCustomEntry(word, english, odia, odia_spelling, odia_meaning, document.getElementById('results'));
+        let imageBase64 = '';
+        const imageFile = document.getElementById('edit-image').files[0];
+        if (imageFile) {
+            imageBase64 = await new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => resolve(reader.result);
+                reader.onerror = reject;
+                reader.readAsDataURL(imageFile);
+            });
+        }
+        saveCustomEntry(word, english, odia, odia_spelling, odia_meaning, document.getElementById('results'), imageBase64);
         editDictionaryForm.classList.add('hidden');
+        editDictionaryForm.reset();
     });
 
     textEditBtn.addEventListener('click', toggleEditText);
