@@ -482,7 +482,7 @@
     <div id="dictionary-section" class="dictionary-section">
                 <h2>Best Odia Dictionary by abhayattcc</h2>
         <div style="text-align: center; margin-bottom: 10px;">
-            <button class="nav-button" onclick="window.open('https://raw.githubusercontent.com/abhayattcc/Js/refs/heads/Js/AccountQRCodeState Bank of India - 5687_LIGHT_THEME.png', '_blank')">Support Us 💖</button>
+            <button class="nav-button" onclick="window.open('https://raw.githubusercontent.com/abhayattcc/lucentgkonline/refs/heads/lucentgkonline/AccountQRCodeState Bank of India - 5687_LIGHT_THEME.png', '_blank')">Support Us 💖</button>
         </div>
         <input type="text" id="searchInput" placeholder="Find a magic word!">
                               <ul id="suggestions" class="hidden"></ul>
@@ -1140,7 +1140,8 @@ async function searchWord(word, targetElement = document.getElementById('results
         }
         const displayText = `<div class="dictionary-entry"><div class="dictionary-text">${mainParts.join(' | ') + (odiaMeaningPart ? `<br>${odiaMeaningPart}` : '')}</div>${imagePart ? `<br>${imagePart}` : ''}${buttonPart ? `<br>${buttonPart}` : ''}</div>`;
 
-        speakText = [bestEntry.odia, bestEntry.odia_spelling, bestEntry.hindi, bestEntry.English, bestEntry.odia_meaning].filter(Boolean).join(' | ');
+        // MODIFIED: Do not speak Odia meaning. Only speak English, Odia word, Odia spelling, Hindi
+        speakText = [bestEntry.odia, bestEntry.odia_spelling, bestEntry.hindi, bestEntry.English].filter(Boolean).join(' | ');
 
         if (targetElement === document.getElementById('results')) {
             targetElement.innerHTML = `<div>${displayText}</div>`;
