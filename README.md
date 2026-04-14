@@ -1,5 +1,5 @@
 # 🎨 **Image Dictionary by abhayattcc Online/offline Free** 🖼️📖  
-**Best Free Online/offline Picture Dictionary with Images, Speech & Visual Learning**  
+**Best Free Online/offline Image Dictionary with Images, Speech & Visual Learning**  
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Now-brightgreen?style=for-the-badge&logo=web)](https://abhayattcc.github.io/image_dictionary/)  
 [![Official Blog](https://img.shields.io/badge/Official%20Blog-Read%20Now-orange?style=for-the-badge&logo=blogger)](https://image-dictionary.blogspot.com/)  
 [![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-blue?style=for-the-badge&logo=github)](https://pages.github.com/)  
