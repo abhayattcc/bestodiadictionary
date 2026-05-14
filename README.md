@@ -1,141 +1,252 @@
-# 🖼️ **Image Dictionary by abhayattcc Online/Offline with 4 Lakhs Words** 📖✨
+<div align="center">
 
-**Best Free Online & Offline Image Dictionary by abhayattcc – 400,000+ Words with Pictures, Speech & Visual Learning**
+<img src="https://img.shields.io/badge/Dict-Odia%20Dictionary-1565C0?style=for-the-badge&logo=bookstack&logoColor=white" alt="Dict"/>
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Now-brightgreen?style=for-the-badge&logo=web)](https://abhayattcc.github.io/image_dictionary/)  
-[![Official Blog](https://img.shields.io/badge/Official%20Blog-Read%20Now-orange?style=for-the-badge&logo=blogger)](https://image-dictionary.blogspot.com/)  
-[![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-blue?style=for-the-badge&logo=github)](https://pages.github.com/)  
-[![4 Lakhs Words](https://img.shields.io/badge/4%20Lakhs%20Words-400%2C000%2B-red?style=for-the-badge)](https://image-dictionary.blogspot.com/)  
-[![Online & Offline](https://img.shields.io/badge/Online%20%26%20Offline-100%25-FF69B4?style=for-the-badge)](https://abhayattcc.github.io/image_dictionary/)  
-[![Best Image Dictionary](https://img.shields.io/badge/Best%20Image%20Dictionary%20by%20abhayattc-2026-yellow?style=for-the-badge)](https://abhayattcc.github.io/image_dictionary/)
+# 📖 Dict — Best Odia Dictionary
 
-**🔥 Image Dictionary by abhayattc Online/Offline with 4 Lakhs Words** – The **#1 free image dictionary** featuring **400,000+ words**, beautiful pictures, instant speech pronunciation, and full offline support.  
+### A multilingual offline dictionary & reader for English · ଓଡ଼ିଆ · हिंदी
 
-**Official Links:**  
-- **Main App (GitHub Pages):** [https://abhayattcc.github.io/image_dictionary/](https://abhayattcc.github.io/image_dictionary/)  
-- **Companion Blog:** [https://image-dictionary.blogspot.com/](https://image-dictionary.blogspot.com/) – Home of “image dictionary by abhayattcc online/offline free” with 4 lakhs words  
+[![License: MIT](https://img.shields.io/badge/License-MIT-f9a825?style=flat-square)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Browser-1565C0?style=flat-square&logo=android&logoColor=white)](.)
+[![Languages](https://img.shields.io/badge/Languages-EN%20%7C%20OD%20%7C%20HI-880e4f?style=flat-square)](.)
+[![Offline](https://img.shields.io/badge/Works-Offline-1b5e20?style=flat-square&logo=wifi&logoColor=white)](.)
+[![GitHub](https://img.shields.io/badge/GitHub-abhayattcc-181717?style=flat-square&logo=github)](https://github.com/abhayattcc)
 
-> 💡 **Search no more!** This is the ultimate **image dictionary by abhayattcc** – online or offline, with 400,000+ words, high-quality images, native speech, and zero ads. Perfect for Odia learners, students, kids, teachers, and visual vocabulary builders.
-
-**Why it ranks #1 for “image dictionary by abhayattcc” & “picture dictionary online free”:**  
-400,000+ word database, PWA offline mode, instant speech, editable entries, and constant updates from abhayattc (Bhubaneswar, Odisha).
+</div>
 
 ---
 
-## 📋 Table of Contents
-- [✨ About Image Dictionary by abhayattcc](#-about-image-dictionary-by-abhayattc)  
-- [🚀 Key Features (Why It’s the Best)](#-key-features-why-its-the-best)  
-- [🎯 Live Demo & Quick Access](#-live-demo--quick-access)  
-- [📸 How It Works – Step-by-Step Visual Guide](#-how-it-works--step-by-step-visual-guide)  
-- [🔍 SEO Optimized for Google #1 Ranking](#-seo-optimized-for-google-1-ranking)  
-- [🛠️ Tech Stack & Performance](#-tech-stack--performance)  
-- [📥 Installation & Local Setup (100% Offline)](#-installation--local-setup-100-offline)  
-- [🌐 Deployment on GitHub Pages](#-deployment-on-github-pages)  
-- [📖 Official Companion Blog – 4 Lakhs Words](#-official-companion-blog--4-lakhs-words)  
-- [🤝 Contributing & Future Updates](#-contributing--future-updates)  
-- [❓ FAQ – Image Dictionary by abhayattc](#-faq--image-dictionary-by-abhayattc)  
-- [📜 License & Backlinks](#-license--backlinks)  
-- [⭐ Star, Share & Help Us Rank #1](#-star--share--help-us-rank-1)  
+## ✨ Features
+
+| Feature | Description |
+|---|---|
+| 🔍 **Auto-detect language** | Type in English, ଓଡ଼ିଆ, or हिंदी — the app detects instantly |
+| 📖 **Odia ↔ Odia Dictionary** | Full Odia monolingual dictionary with Odia meanings |
+| 🔄 **Reverse lookup** | Search Odia or Hindi words to find English meanings |
+| 🔊 **Text-to-Speech** | Read results aloud in EN / OD / HI with word highlighting |
+| 📝 **Fullscreen Reader** | Paginated reader for TXT, HTML, DOCX & PDF files |
+| 💾 **Saves your notes** | Persist custom text across sessions via localStorage |
+| 📴 **Fully offline** | Databases cached after first load — no internet needed |
+| 🤖 **Android app ready** | Native Android bridges for TTS, file picker & floating window |
+| 🫧 **Floating dictionary** | Start/stop a floating overlay service on Android |
 
 ---
 
-## ✨ About Image Dictionary by abhayattcc
+## 🌐 Supported Languages
 
-Welcome to the **Image Dictionary by abhayattcc Online/Offline with 4 Lakhs Words** – the most powerful **free image dictionary** created by abhayattcc!
+<div align="center">
 
-This GitHub Pages app at **[https://abhayattcc.github.io/image_dictionary/](https://abhayattcc.github.io/image_dictionary/)** delivers **400,000+ words** with stunning pictures, instant Text-to-Speech (Odia + English + Hindi), editable dictionary entries, and a dedicated Reader Section.
+| Badge | Language | Direction |
+|:---:|---|---|
+| ![EN](https://img.shields.io/badge/EN-English-1976D2?style=flat-square) | English | EN → Odia + Hindi |
+| ![OD](https://img.shields.io/badge/OD-ଓଡ଼ିଆ-880e4f?style=flat-square) | Odia (Orissan) | OD → English |
+| ![HI](https://img.shields.io/badge/HI-हिंदी-1b5e20?style=flat-square) | Hindi | HI → English |
+| ![OD](https://img.shields.io/badge/ODIA_DICT-ଓଡ଼ିଆ↔ଓଡ଼ିଆ-4a148c?style=flat-square) | Odia Monolingual | Odia word → Odia meaning |
 
-Created by **abhayattcc** from Bhubaneswar, Odisha, India, this **image dictionary** works **100% online and offline**. It is fully synced with the official blog at **[https://image-dictionary.blogspot.com/](https://image-dictionary.blogspot.com/)** – the largest free resource for “image dictionary by abhayattcc online/offline free” containing **4 lakhs words** with meanings and advanced learning tools.
-
-**Perfect for:**
-- Kids & visual learners
-- Odia language students & native speakers
-- ESL / language teachers & homeschool parents
-- Anyone searching **“image dictionary by abhayattcc”**, **“picture dictionary online free”**, **“4 lakhs words dictionary”**, or **“odia image dictionary offline”**
-
-Words + beautiful pictures + speech + 400,000+ entries = **permanent memory**. No signup. No ads. Pure learning joy.
+</div>
 
 ---
 
-## 🚀 Key Features (Why It’s the Best)
+## 🗄️ Databases
 
-| Feature                              | Description                                                      | Benefit                          |
-|--------------------------------------|------------------------------------------------------------------|----------------------------------|
-| **4 Lakhs Words Database**           | 400,000+ words with high-quality images                          | Complete vocabulary coverage     |
-| **Instant Speech Pronunciation**     | ⏯️ Speak button with native Odia/English/Hindi TTS              | Perfect accent & pronunciation   |
-| **High-Quality Picture Dictionary**  | Every word paired with clear, engaging pictures                  | Instant visual understanding     |
-| **Reader Section**                   | 📚 Immersive full-screen reading mode                            | Book-like learning experience    |
-| **Edit & Save Entries**              | ✏️ Customize and save your own dictionary                        | Personal 4-lakh-word builder     |
-| **PWA + Full Offline Support**       | Installable app with progressive caching                         | Works without internet           |
-| **100% Free & Open Source**          | No ads, no paywalls, forever free                                | Zero cost for everyone           |
-| **Mobile-First Responsive Design**   | Lightning-fast on phones, tablets & desktops                     | Learn anywhere, anytime          |
+The app uses three compressed SQLite databases hosted in this repository:
 
-**Upcoming (vote in Issues):** Full 400k-word search integration, alphabet navigation, dark mode & multi-language picture pairs.
+```
+data/
+├── english_odia.db.gz      # English ↔ Odia word pairs
+├── english_hindi.db.gz     # English ↔ Hindi word pairs + images
+└── odia_meaning.db.gz      # Odia word → Odia meaning (monolingual)
+```
+
+Databases are downloaded once and cached via the **Cache API** for fully offline use. All queries run in-browser using **sql.js** (WebAssembly SQLite) — no server required.
 
 ---
 
-## 🎯 Live Demo & Quick Access
+## 🏗️ Architecture
 
-**🔗 Image Dictionary by abhayattcc (GitHub Pages):**  
-[https://abhayattcc.github.io/image_dictionary/](https://abhayattcc.github.io/image_dictionary/)
+```
+index.html  (single self-contained file)
+│
+├── Language Detection       — Unicode range checks (Odia U+0B00–U+0B7F, Hindi U+0900–U+097F)
+├── Odia Normaliser          — Handles NFC, anusvara/chandrabindu, ba/va, ya/yya variants
+├── Database Layer           — sql.js (WASM SQLite), pako (gzip), Cache API
+├── Search Engine            — English prefix, Odia reverse, Hindi reverse, Odia monolingual
+├── TTS Engine               — Queued, multilingual, with word-level highlighting
+├── Fullscreen Reader        — Paginated (configurable words/page), tap-to-read, themes
+├── File Extractor           — TXT · HTML · DOCX (custom unzip) · PDF (pdf.js)
+└── Android Bridges          — window.AndroidTTS · window.AndroidApp · window.AndroidFile
+```
 
-**🔗 Official Blog (4 Lakhs Words):**  
-[https://image-dictionary.blogspot.com/](https://image-dictionary.blogspot.com/)
+### Android Bridges
 
-**Try it in 10 seconds:**
-1. Open the GitHub Pages link
-2. Tap any word → Beautiful image + **🗣️ Speak**
-3. Explore Reader Section
-4. Visit the blog for full 400,000+ words & meanings
+When embedded in an Android WebView, the app communicates with native code via JavaScript interfaces:
 
-**Pro Tip:** Bookmark both links – your complete **image dictionary by abhayattcc online/offline** ecosystem with 4 lakhs words!
+| Bridge | Methods | Purpose |
+|---|---|---|
+| `window.AndroidTTS` | `speak(text, lang, id)` · `stop()` | Native TTS playback |
+| `window.AndroidApp` | `startFloatingService()` · `stopFloatingService()` · `openUrl(url)` | App control |
+| `window.AndroidFile` | `openFilePicker()` | Native file chooser |
 
----
-
-## 📸 How It Works – Step-by-Step Visual Guide
-
-1. **Homepage** → Beautiful grid of words with preview pictures  
-2. **Click any card** → Full-screen image + definition + speech controls  
-3. **Activate Speech** → Hear perfect pronunciation instantly  
-4. **Edit Mode** → Personalize and save entries from the 4-lakh-word database  
-5. **Reader Section** → Practice like a real picture book  
-
-*(Screenshots & GIFs updated regularly – contribute yours!)*
-
----
-
-## 🔍 SEO Optimized for Google #1 Ranking
-
-This README and the live sites are engineered for **organic Google #1 ranking** on high-intent searches:
-- image dictionary by abhayattc
-- image dictionary by abhayattc online/offline
-- image dictionary with 4 lakhs words
-- picture dictionary online free
-- best odia image dictionary offline
-- free image dictionary 400000 words
-- odia shabda kosha with pictures
-
-**Backlink Strategy:**  
-Link back to this repo and the two official sites from your blog, education sites, or language forums. Google loves fresh, comprehensive, user-focused content like this.
+Callbacks from Android to JS:
+- `window._attsOnEnd(id)` — called when TTS utterance finishes
+- `window._androidFileResult(name, base64)` — delivers selected file as base64
+- `window._androidFileError(msg)` — reports file picker errors
+- `window.showPopup(word)` — triggers a dictionary search (used by floating service)
 
 ---
 
-## 🛠️ Tech Stack & Performance
+## 🚀 Usage
 
-- **Frontend:** Pure HTML5 + CSS3 + Vanilla JavaScript (zero dependencies)  
-- **Speech:** Native Web Speech API (Odia/English/Hindi support)  
-- **Hosting:** GitHub Pages + PWA service worker  
-- **Caching:** Offline-first with real-time progress bar  
-- **Speed:** Loads in under 1 second on mobile  
+### Browser (Standalone)
 
-Lightweight, blazing fast, and future-proof for 400,000+ words.
-
----
-
-## 📥 Installation & Local Setup (100% Offline)
+Just open `index.html` in any modern browser. No build step, no dependencies to install.
 
 ```bash
-# Clone & run instantly (works offline forever)
-git clone https://github.com/abhayattcc/image_dictionary.git
-cd image_dictionary
-open index.html
+git clone https://github.com/abhayattcc/Best-odia-dictionary.git
+cd Best-odia-dictionary
+# Open index.html in your browser
+```
+
+> **Note:** Databases are fetched from GitHub on first load and cached. An internet connection is required only for the initial setup.
+
+### Android WebView
+
+Embed `index.html` as a WebView asset and register the three Java bridges:
+
+```java
+webView.addJavascriptInterface(new AndroidTTSBridge(this), "AndroidTTS");
+webView.addJavascriptInterface(new AndroidAppBridge(this), "AndroidApp");
+webView.addJavascriptInterface(new AndroidFileBridge(this), "AndroidFile");
+```
+
+Enable required WebView settings:
+
+```java
+WebSettings settings = webView.getSettings();
+settings.setJavaScriptEnabled(true);
+settings.setDomStorageEnabled(true);     // localStorage
+settings.setCacheMode(WebSettings.LOAD_DEFAULT);
+settings.setAllowFileAccess(true);
+```
+
+---
+
+## 🔍 Search Modes
+
+### 1. English Search
+Type any English word → returns Odia and Hindi translations with optional image.
+
+### 2. Odia Reverse Search (`ଓଡ଼ିଆ → EN`)
+Type Odia script → finds matching English headwords. Handles Unicode variant normalisation automatically (ବ/ଵ, ଯ/ୟ, ଁ/ଂ, ଡ଼/ଢ଼, etc.).
+
+### 3. Hindi Reverse Search (`हिंदी → EN`)
+Type Devanagari → finds matching English headwords.
+
+### 4. Odia Dictionary Mode (`ଓ` button)
+Toggle the **ଓ** button for the Odia monolingual dictionary. Type an Odia word or its romanised spelling to get the full Odia meaning.
+
+> All modes use a **1-second debounce** with animated typing indicator — no need to press Enter.
+
+---
+
+## ⚙️ Configuration
+
+Key constants in `index.html`:
+
+```javascript
+const SEARCH_DELAY = 1000;   // Debounce delay in ms
+
+// Database URLs (change to self-host)
+const DB_URLS = {
+  eo: '...english_odia.db.gz',
+  eh: '...english_hindi.db.gz',
+  om: '...odia_meaning.db.gz'
+};
+
+// localStorage keys
+const SAVE_KEY   = 'dict-note-v1';   // TTS / reader saved text
+const PAGE_PFX   = 'rpage:';         // Reader last-page per filename
+const CACHE      = 'float-dict-v1';  // Cache Storage bucket name
+```
+
+---
+
+## 📁 File Support (Reader & TTS)
+
+| Extension | Method |
+|---|---|
+| `.txt` `.md` `.rtf` | FileReader (UTF-8) |
+| `.html` `.htm` | DOMParser → innerText |
+| `.docx` `.doc` | Custom ZIP parser + pako inflate |
+| `.pdf` | pdf.js (loaded on demand) |
+
+---
+
+## 🔠 Odia Script Normalisation
+
+The app includes a robust Odia normaliser that handles real-world encoding inconsistencies:
+
+- **NFC normalisation** and invisible character stripping
+- **Anusvara/Chandrabindu** interchange (`ଁ` ↔ `ଂ`)
+- **Ba/Va** interchange (`ବ` ↔ `ଵ`)  
+- **Ya/Yya** interchange (`ଯ` ↔ `ୟ`)
+- **Wa → Va** mapping (`ୱ` → `ଵ`)
+- **Nukta** combinations (`ଡ+଼` ↔ `ଡ଼`, `ଢ+଼` ↔ `ଢ଼`)
+- **Virama spacing** cleanup
+- **Romanised spelling** normalisation (ā→a, ī→i, ū→u, ḍ→d, ṭ→t, w→v, etc.)
+
+---
+
+## 🛠️ Dependencies
+
+All loaded from CDN — no npm/build step required.
+
+| Library | Version | Purpose |
+|---|---|---|
+| [pako](https://github.com/nodeca/pako) | 2.0.4 | Gzip decompression for databases |
+| [sql.js](https://github.com/sql-js/sql.js) | 1.8.0 | In-browser SQLite (WASM) |
+| [pdf.js](https://github.com/mozilla/pdf.js) | 3.11.174 | PDF text extraction (on demand) |
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Ideas for improvement:
+
+- 📚 Expand the word databases
+- 🌍 Add more languages (Sambalpuri, Bengali, Telugu…)
+- 🔤 Improve romanisation → Odia script matching
+- 🖼️ Add more word images
+- 🤖 Android app improvements (Sketchware Pro / Android Studio)
+
+Please open an issue or pull request on [GitHub](https://github.com/abhayattcc/Best-odia-dictionary).
+
+---
+
+## 💲 Support
+
+If Dict has been useful to you, please consider donating to help keep the project alive:
+
+[![Donate](https://img.shields.io/badge/Donate-Razorpay-072654?style=for-the-badge&logo=razorpay&logoColor=white)](https://razorpay.me/@abhayabehera4628)
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🔒 Privacy
+
+Dict does not collect any personal data. All dictionary lookups run entirely on-device. See [PRIVACY.md](PRIVACY.md) for the full privacy policy.
+
+---
+
+<div align="center">
+
+Made with ❤️ for the Odia language community
+
+**[abhayattcc](https://github.com/abhayattcc)** · github.com/abhayattcc/Best-odia-dictionary
+
+</div>
